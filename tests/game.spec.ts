@@ -1,7 +1,7 @@
-import {expect, sinon} from './test-helper'
-import {Game} from '../src/game'
-import {Terminal} from '../src/terminal'
-import {SinonStubbedInstance} from 'sinon'
+import { expect, sinon } from './test-helper.ts'
+import { Game } from '../src/game.ts'
+import { Terminal } from '../src/terminal.ts'
+import { SinonStubbedInstance } from 'sinon'
 
 describe('Game', () => {
   describe('game initialization', () => {
@@ -19,7 +19,8 @@ describe('Game', () => {
 
       // Assert
       const expectedWelcomeMessage = '4 in a Row Game : STARTED !'
-      expect(terminal.print).to.have.been.calledOnceWith(expectedWelcomeMessage)
+
+      sinon.assert.calledOnceWithExactly(terminal.print, expectedWelcomeMessage)
     })
   })
 })

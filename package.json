@@ -3,26 +3,26 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/main.ts",
+  "type": "module",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "build": "npx tsc",
-    "start": "ts-node src/main.ts",
-    "test": "mocha --recursive --exit --require ts-node/register 'tests/**/*.test.ts'"
+    "start": "tsx src/main.ts",
+    "test": "mocha --recursive --exit 'tests/**/*.spec.ts'"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@types/node": "^18.15.3",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.0.2"
-  },
   "devDependencies": {
-    "@types/chai": "^4.3.4",
-    "@types/mocha": "^10.0.1",
-    "@types/sinon": "^10.0.13",
-    "@types/sinon-chai": "^3.2.9",
-    "chai": "^4.3.7",
-    "mocha": "^10.2.0",
-    "sinon": "^15.0.2",
-    "sinon-chai": "^3.7.0"
+    "@types/chai": "^4.3.14",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.30",
+    "@types/sinon": "^17.0.3",
+    "chai": "^5.1.0",
+    "mocha": "^10.3.0",
+    "sinon": "^17.0.1",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3"
   }
 }

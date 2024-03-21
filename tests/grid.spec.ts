@@ -1,5 +1,5 @@
-import { expect } from './test-helper'
-import {Grid} from '../src/grid'
+import { expect } from './test-helper.js'
+import { Grid } from '../src/grid.js'
 
 describe('Grid', () => {
   describe('testGetter', () => {

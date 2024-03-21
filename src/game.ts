@@ -1,13 +1,13 @@
-import {Terminal} from './terminal'
+import { Terminal } from './terminal.ts'
 
 export class Game {
-  private _terminal: Terminal
+  private terminal: Terminal
 
   constructor(terminal: Terminal) {
-    this._terminal = terminal
+    this.terminal = terminal
   }
 
   start() {
-    this._terminal.print('sqdqsd')
+    this.terminal.print('sqdqsd')
   }
 }
